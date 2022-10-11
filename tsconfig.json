@@ -6,7 +6,7 @@
 		"outDir": "./dist",
 		"baseUrl": ".",
 		"noEmitOnError": false,
-		"paths": { //路径别名须同时在package.json配置一次
+		"paths": {
 			"@/*": [
 				"./src/*"
 			]
