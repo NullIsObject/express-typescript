@@ -2,7 +2,7 @@
 ## 基本
 ### 这是一个使用express+ts的后端基本环境配置
 ## 注意
-### 路径别名须在tsconfig.json和在src/bin/www.ts通过"module-alias"模块配置
+### 路径别名须同时在tsconfig.json配置和在src/bin/www.ts 通过"module-alias"模块配置
 ### "module-alias"模块配置参见："https://www.npmjs.com/package/module-alias"
 #
 # 项目运行
