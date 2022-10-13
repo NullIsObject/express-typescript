@@ -7,12 +7,12 @@
 #
 # 项目运行
 ## 开发环境
-	npm i	//安装依赖
-	npm i -g nodemon //全局安装nodemon
-	npm run dev		//使用nodemon运行项目
+	npm i
+	npm i -g nodemon
+	npm run dev
 ## 生产环境
-	npm run build //项目打包
-	npm run start	//项目运行
+	npm run build
+	npm run start
 #
 # 目录结构
 	└─root
