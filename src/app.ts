@@ -1,6 +1,5 @@
-// const path = require('path')
-import path from 'path';
-import express from 'express';
+const path = require('path');
+const express = require('express');
 const app = express();
 // view模板路径和后缀设置
 app.set('views', path.join(__dirname, 'views'));
