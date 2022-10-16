@@ -1,9 +1,8 @@
 import { AddressInfo } from 'net';
-const http = require('http');
-const minimist = require('minimist');
-const debug = require('debug')('app:server');
-const moduleAlias = require('module-alias');
-const path = require('path');
+import http from 'http';
+import minimist from 'minimist';
+import moduleAlias from 'module-alias';
+import path from 'path';
 // 路径别名配置
 moduleAlias.addAliases({
   '@': path.join(__dirname, '../')
@@ -63,6 +62,5 @@ function onListening() {
   const bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + (addr as AddressInfo).port;
-  debug('Listening on ' + bind);
-  console.log(`http://${host}:${port}`)
+  console.log(`http://${host}:${port}`);
 }
