@@ -3,10 +3,9 @@ import http from 'http';
 import minimist from 'minimist';
 import moduleAlias from 'module-alias';
 import path from 'path';
+import { moduleAliasConfig } from "../config";
 // 路径别名配置
-moduleAlias.addAliases({
-  '@': path.join(__dirname, '../')
-});
+moduleAlias.addAliases(moduleAliasConfig);
 import app from '@/app';
 /**
  * 端口和IP设置

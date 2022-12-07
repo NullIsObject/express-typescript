@@ -2,7 +2,8 @@
 ## 基本
 ### 这是一个使用express+ts的后端基本环境配置
 ## 注意
-### 路径别名须同时在tsconfig.json配置和在src/bin/www.ts 通过"module-alias"模块配置
+### 路径别名须同时在tsconfig.json配置和在src/config.ts 通过"moduleAliasConfig"配置
+### "moduleAliasConfig"配置项为"module-alias"模块配置，在src/bin/www.ts引入并配置
 ### "module-alias"模块配置参见："https://www.npmjs.com/package/module-alias"
 #
 # 项目运行
@@ -23,13 +24,14 @@
 			│
 			├─dist //打包后的输出目录
 			└─src	//存放源码
-					│  app.ts	//项目配置统一处理
+					│  app.ts
+					│  config.ts	//项目统一配置
 					│
 					├─bin
-					│      www.ts	//项目启动配置
+					│      www.ts	//项目启动页
 					│
-					├─middleware	//存放中间件
-					├─model	//模型层
+					├─controller
+					├─model
 					├─public	//视图层资源
 					├─routes	//存放路由
 					│      index.ts
