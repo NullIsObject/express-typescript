@@ -1,6 +1,6 @@
 import mysql from 'mysql';
 import { QueryOptions } from "mysql";
-import { mysqlConfig } from '@/config';
+import { mysqlConfig } from '@/bin/config';
 
 const pool = mysql.createPool(mysqlConfig);
 export const query = (sql: QueryOptions | string, arr: any[]): Promise<any> => {

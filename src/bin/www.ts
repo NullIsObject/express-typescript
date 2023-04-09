@@ -1,18 +1,18 @@
-import { AddressInfo } from 'net';
+import {AddressInfo} from 'net';
 import http from 'http';
 import minimist from 'minimist';
 import moduleAlias from 'module-alias';
 import path from 'path';
-import { moduleAliasConfig } from "../config";
+import {moduleAliasConfig, serverConfig} from "./config";
 // 路径别名配置
 moduleAlias.addAliases(moduleAliasConfig);
 import app from '@/app';
+
 /**
  * 端口和IP设置
  */
+const {host, port} = serverConfig
 const args = minimist(process.argv.slice(2));
-const host = args.host || '127.0.0.1';
-const port = args.port || process.env.PORT || '3000';
 app.set('port', port);
 
 const server = http.createServer(app);
