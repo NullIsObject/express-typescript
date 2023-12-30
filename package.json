@@ -1,30 +1,33 @@
 {
   "name": "ts-app",
   "version": "0.0.0",
-  "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node ./dist/bin/www.js",
     "dev": "nodemon ./src/bin/www.ts",
-    "build": "node ./build.js --flow=copySrc && tsc && node ./build.js --flow=removets"
+    "dist": "npm run deleteOutputDir && rollup -c && npm run build:package",
+    "build:package": "node ./build/outputPackageConfig.js",
+    "deleteOutputDir": "node ./build/deleteOutputDir",
+    "start": "node ./dist/www.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.8",
     "express": "^4.18.1",
-    "fs-extra": "^10.1.0",
     "minimist": "^1.2.6",
     "module-alias": "^2.2.2",
     "mysql": "^2.18.1"
   },
   "devDependencies": {
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "@types/express": "^4.17.14",
     "@types/minimist": "^1.2.2",
     "@types/module-alias": "^2.0.1",
     "@types/mysql": "^2.15.21",
     "@types/node": "^18.7.23",
+    "rollup": "^4.9.2",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-typescript2": "^0.36.0",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.4"
   }

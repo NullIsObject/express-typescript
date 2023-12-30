@@ -1,28 +1,28 @@
 {
-	"include": [ //指定要编译的目录
+	"include":[
 		"./src"
 	],
-	"ts-node": {
-    "files": true
-  },
-	"compilerOptions": {
-		"outDir": "./dist",
-		"baseUrl": ".",
-		"noEmitOnError": false,
-		"paths": {
-			"@/*": [
+	"ts-node":{
+		"files":true
+	},
+	"compilerOptions":{
+		"outDir":"./dist",
+		"baseUrl":".",
+		"noEmitOnError":false,
+		"paths":{
+			"@/*":[
 				"./src/*"
 			]
 		},
-		"target": "ES2018",
-		"module": "CommonJS",
-		"esModuleInterop": true,
-		"allowSyntheticDefaultImports": true,
-		"forceConsistentCasingInFileNames": true,
-		"lib": [
-			"ES2018"
+		"target":"ESNext",
+		"module":"ESNext",
+		"esModuleInterop":true,
+		"allowSyntheticDefaultImports":true,
+		"forceConsistentCasingInFileNames":true,
+		"lib":[
+			"ESNext"
 		],
-		"removeComments": true,
-		"strict": true,
+		"removeComments":true,
+		"strict":true
 	}
 }
