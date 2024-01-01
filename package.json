@@ -4,11 +4,12 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon ./src/bin/www.ts",
-    "dist": "npm run deleteOutputDir && rollup -c && npm run build:package",
+    "dev:build": "npm run deleteOutputDir && rollup -c rollup.config.dev.js -w",
+    "dev:start": "nodemon ./dist/www.js",
+    "dist": "npm run deleteOutputDir && rollup -c && npm run build:package && npm run build:installMD",
     "build:package": "node ./build/outputPackageConfig.js",
-    "deleteOutputDir": "node ./build/deleteOutputDir",
-    "start": "node ./dist/www.js"
+    "build:installMD": "node ./build/outputInstallMD.js",
+    "deleteOutputDir": "node ./build/deleteOutputDir"
   },
   "dependencies": {
     "ejs": "^3.1.8",

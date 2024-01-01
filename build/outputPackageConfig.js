@@ -2,6 +2,7 @@ import * as fs from "fs"
 import config  from "./config.js"
 
 function main() {
+  if(!fs.existsSync(config.output.dir)) return
   const filePath = `${process.cwd()}/package.json`
   getPackageConfig(filePath)
     .then(packageConfig => {

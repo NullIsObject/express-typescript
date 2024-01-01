@@ -6,8 +6,7 @@ import config          from "./config.js"
 const __dirname = getDirname()
 
 function main() {
-  copyFile(`${__dirname}/install.md`, `${config.output.dir}/install.md`)
-  console.log("install.md")
+  fs.existsSync(config.output.dir) && copyFile(`${__dirname}/install.md`, `${config.output.dir}/install.md`)
 }
 
 /**

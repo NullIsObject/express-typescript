@@ -10,32 +10,36 @@
 + version
 # 项目运行
 ## 开发环境
-	npm i
-	npm i -g nodemon
-	npm run dev
+````shell
+npm i
+npm i -g nodemon
+npm run dev:build
+npm run dev:start
+````
 ## 打包
-	npm run dist
+````shell
+npm run dist
+````
 #
 # 目录结构
-	└─root
-			│  .gitignore
-			│  package.json
-			│  tsconfig.json
-			│
-      ├─build //存放打包脚本
-			├─dist //打包后的输出目录
-			└─src	//存放源码
-					│  app.ts
-					│  config.ts	//项目统一配置
-					│
-					├─bin
-					│      www.ts	//项目启动页
-					│
-					├─controller
-					├─model
-					├─public	//视图层资源
-					├─routes	//存放路由
-					│      index.ts
-					│
-					└─views	// 视图层
-									index.ejs
+````
+  └─root
+    │
+    ├─build //存放打包脚本
+    ├─dist //打包后的输出目录
+    └─src	//存放源码
+      │  app.ts
+      │  config.ts	//项目统一配置
+      │
+      ├─bin
+      │  www.ts	//项目启动页
+      │
+      ├─controller
+      ├─model
+      ├─public	//视图层资源
+      ├─routes	//存放路由
+      │  index.ts
+      │
+      └─views	// 视图层
+      │  index.ejs
+````
