@@ -1,9 +1,10 @@
 # 项目介绍
 ## 这是一个使用express+ts的后端基本环境配置
 ## 注意：
-### 路径别名须同时在tsconfig.json配置和在src/config.ts 通过"moduleAliasConfig"配置
-### "moduleAliasConfig"配置项为"module-alias"模块配置，在src/bin/www.ts引入并配置
-### "module-alias"模块配置参见："https://www.npmjs.com/package/module-alias"
+````
+rollup的"@rollup/plugin-node-resolve"插件似乎默认支持"src"路径别名。
+同时，路径别名可以直接在tsconfig.json配置
+````
 ## 下载模板后需修改配置：
 ### package.json
 + name

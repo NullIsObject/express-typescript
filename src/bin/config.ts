@@ -1,14 +1,6 @@
-import path            from "path"
 import minimist        from "minimist"
-import {fileURLToPath} from "url"
-import {dirname}       from "path"
 
 const args = minimist(process.argv.slice(2))
-const __dirname = dirname(fileURLToPath(import.meta.url))
-// 路径别名配置
-export const moduleAliasConfig = {
-  "@": path.join(__dirname, "../")
-}
 // 数据库配置
 export const mysqlConfig = {
   host: "localhost",

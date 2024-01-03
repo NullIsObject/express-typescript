@@ -1,14 +1,10 @@
 import {AddressInfo} from "net"
 import http          from "http"
 import minimist      from "minimist"
-import moduleAlias   from "module-alias"
-import path          from "path"
 import {
-  moduleAliasConfig, serverConfig
-}                    from "./config"
-// 路径别名配置
-moduleAlias.addAliases(moduleAliasConfig)
-import app           from "@/app"
+  serverConfig
+}                    from "src/bin/config"
+import app           from "src/app"
 
 /**
  * 端口和IP设置

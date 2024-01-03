@@ -8,7 +8,7 @@ export default {
   input: "src/bin/www.ts",
   output: {
     file: `${config.output.dir}/${config.output.file}`,
-    format:"es"
+    format: "es"
   },
   plugins: [
     typescript(),

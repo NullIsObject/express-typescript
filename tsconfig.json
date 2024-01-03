@@ -9,11 +9,6 @@
 		"outDir":"./dist",
 		"baseUrl":".",
 		"noEmitOnError":false,
-		"paths":{
-			"@/*":[
-				"./src/*"
-			]
-		},
 		"target":"ESNext",
 		"module":"ESNext",
 		"esModuleInterop":true,
