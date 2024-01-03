@@ -37,7 +37,6 @@ function getPackageConfig(filePath) {
 function changeConfig(packageConfig) {
   packageConfig = deepCloneObj(packageConfig)
   packageConfig.scripts = config.scripts
-  packageConfig.type = "commonjs"
   delete packageConfig.devDependencies
   return packageConfig
 }
