@@ -29,6 +29,10 @@ export default {
         {
           src: `./src/views/*`,
           dest: `${config.output.dir}/views`,
+        },
+        {
+          src: `./build/install.md`,
+          dest: `${config.output.dir}`,
         }
       ],
       hook: 'writeBundle',

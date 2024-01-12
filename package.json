@@ -6,9 +6,8 @@
   "scripts": {
     "dev:build": "rollup -c rollup.config.dev.js -w",
     "dev:start": "nodemon ./dist/www.js",
-    "dist": "rollup -c && npm run build:package && npm run build:installMD",
-    "build:package": "node ./build/outputPackageConfig.js",
-    "build:installMD": "node ./build/outputInstallMD.js"
+    "dist": "rollup -c && npm run build:package",
+    "build:package": "node ./build/outputPackageConfig.js"
   },
   "dependencies": {
     "ejs": "^3.1.8",
