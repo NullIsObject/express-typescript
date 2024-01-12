@@ -35,7 +35,7 @@ export default {
           dest: `${config.output.dir}`,
         }
       ],
-      hook: 'writeBundle',
+      hook: "writeBundle",
       verbose: true
     })
   ]
