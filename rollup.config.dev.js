@@ -1,6 +1,6 @@
 import rollupConfig from "./rollup.config.js"
 
 export default {
-    ...rollupConfig,
-    external: [/node_modules/],
+  ...rollupConfig,
+  external: [/node_modules/],
 }
