@@ -1,5 +1,5 @@
-import * as fs      from "fs"
-import config       from "./config.js"
+import * as fs        from "fs"
+import config         from "./config.js"
 import {readJSONFile} from "./readJSONFile.js"
 
 function main() {
