@@ -13,6 +13,7 @@ export default {
     file: `${config.output.dir}/${config.output.file}`,
     format: config.type
   },
+  external: [/node_modules/],
   plugins: [
     {
       name: "fileCRUD",
