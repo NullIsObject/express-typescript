@@ -28,9 +28,7 @@ export default {
     nodeResolve({
       preferBuiltins: true,
     }),
-    commonjs({
-      include: "node_modules/**",
-    }),
+    commonjs(),
     json(),
   ]
 }
