@@ -13,6 +13,7 @@ export function deleteDir(dirPath) {
  * @param dirPath {string}
  */
 export function clearDir(dirPath) {
+  if (!fs.existsSync(dirPath)) return
   const fileNameList = fs.readdirSync(dirPath)
   fileNameList.forEach(fileName => {
     const filePath = `${dirPath}/${fileName}`

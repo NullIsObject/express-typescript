@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev:build": "rollup -c rollup.config.dev.js -w",
-    "dev:start": "nodemon ./dist/www.js",
+    "dev:start": "nodemon --enable-source-maps ./dist/www.js",
     "dist": "rollup -c && npm run build:package",
     "build:package": "node ./build/outputPackageConfig.js"
   },

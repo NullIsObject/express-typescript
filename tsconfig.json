@@ -18,6 +18,7 @@
 			"ESNext"
 		],
 		"removeComments":true,
-		"strict":true
+		"strict":true,
+		"sourceMap": true
 	}
 }
