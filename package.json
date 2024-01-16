@@ -6,7 +6,7 @@
   "scripts": {
     "dev:build": "rollup -c rollup.config.dev.js -w",
     "dev:start": "nodemon --enable-source-maps ./dist/www.js",
-    "dist": "rollup -c && npm run build:package",
+    "dist": "rollup -c rollup.config.prod.js && npm run build:package",
     "build:package": "node ./build/outputPackageConfig.js"
   },
   "dependencies": {
