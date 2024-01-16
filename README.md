@@ -2,7 +2,7 @@
 ## 这是一个使用express+ts的后端基本环境配置
 ## 注意：
 ````
-rollup的"@rollup/plugin-node-resolve"插件似乎默认支持"src"路径别名。
+rollup的"@rollup/plugin-node-resolve"插件默认支持"src"路径别名。
 同时，路径别名可以直接在tsconfig.json配置
 ````
 ## 下载模板后需修改配置：
@@ -13,7 +13,6 @@ rollup的"@rollup/plugin-node-resolve"插件似乎默认支持"src"路径别名�
 ## 开发环境
 ````shell
 npm i
-npm i -g nodemon
 npm run dev:build
 npm run dev:start
 ````

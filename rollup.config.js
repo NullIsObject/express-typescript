@@ -2,6 +2,7 @@ import typescript  from "@rollup/plugin-typescript"
 import nodeResolve from "@rollup/plugin-node-resolve"
 import commonjs    from "@rollup/plugin-commonjs"
 import json        from "@rollup/plugin-json"
+import terser      from "@rollup/plugin-terser"
 import {
   clearDir, copy
 }                  from "./build/fileCRUD.js"
@@ -11,7 +12,8 @@ export default {
   input: "src/bin/www.ts",
   output: {
     file: `${config.output.dir}/${config.output.file}`,
-    format: config.type
+    format: config.type,
+    plugins: [terser()]
   },
   external: [/node_modules/],
   plugins: [

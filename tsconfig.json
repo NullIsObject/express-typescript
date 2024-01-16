@@ -1,24 +1,23 @@
 {
-	"include":[
-		"./src"
-	],
-	"ts-node":{
-		"files":true
-	},
-	"compilerOptions":{
-		"outDir":"./dist",
-		"baseUrl":".",
-		"noEmitOnError":false,
-		"target":"ESNext",
-		"module":"ESNext",
-		"esModuleInterop":true,
-		"allowSyntheticDefaultImports":true,
-		"forceConsistentCasingInFileNames":true,
-		"lib":[
-			"ESNext"
-		],
-		"removeComments":true,
-		"strict":true,
-		"sourceMap": true
-	}
+  "include": [
+    "./src"
+  ],
+  "ts-node": {
+    "files": true
+  },
+  "compilerOptions": {
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "noEmitOnError": false,
+    "target": "ESNext",
+    "module": "ESNext",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "ESNext"
+    ],
+    "removeComments": true,
+    "strict": true
+  }
 }
