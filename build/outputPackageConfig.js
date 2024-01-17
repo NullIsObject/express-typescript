@@ -21,6 +21,7 @@ function changeConfig(packageConfig) {
   packageConfig = deepCloneObj(packageConfig)
   packageConfig.scripts = config.scripts
   delete packageConfig.devDependencies
+  packageConfig.main = config.output.file
   return packageConfig
 }
 
